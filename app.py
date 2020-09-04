@@ -25,14 +25,11 @@ def upload():
         ''' path + file name = saving location '''
         destination = "./".join([target, filename])
         file.save(destination)
-        make()
         return render_template("upload.html", text=filename + " is saved")
     else:
         return render_template("upload.html", text="Upload docx file")
 
-def make():
-    print("hello")
-
 
 if (__name__) == "__main__":
-    app.run(debug=True)
+    app.debug = True
+    app.run()
