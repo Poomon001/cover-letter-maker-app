@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\Poomon\Desktop\programing projects\PyCharm project\coverLetterGenerator\venv"
+$env:VIRTUAL_ENV="C:\Users\Poomon\Desktop\programing projects\PyCharm project\coverLetterGeneratorApp\venv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
