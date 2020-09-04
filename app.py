@@ -32,24 +32,7 @@ def upload():
 
 def make():
     print("hello")
-    model = ""
-    doc = docx.Document("model.docx")
-    file = doc.paragraphs
 
-    ''' create style obj (access by document.styles) '''
-    style = doc.styles['Normal']
-
-    ''' modify font (style.class.method) '''
-    font = style.font
-    font.name = 'Arial'
-    font.size = docx.shared.Pt(18)
-
-    for line in (file):
-        print(line.text)
-        model += line.text
-        model += ("\n")
-
-    doc.save("output.docx")
 
 if (__name__) == "__main__":
     app.run(debug=True)
