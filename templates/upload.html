@@ -6,7 +6,7 @@
 {% block content %}
 <h1>Upload</h1>
 <p>{{text}}</p>
-<form id="upload" action="#" method="POST" enctype="multipart/form-data">
+<form id="upload" action="{{ url_for('upload')}}" method="POST" enctype="multipart/form-data">
   <input type="file" id="myFile" name="file" accept=".doc, .docx" multiple>
   <input type="submit" value="send">
 </form>
